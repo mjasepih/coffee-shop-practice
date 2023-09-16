@@ -1,0 +1,62 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color:#cca300;
+    background-image: url(/img/coffeeoption2.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+
+}
+
+header {
+    text-align:center;
+}
+
+h1 {
+    text-align:center;
+    color: black;
+    font-family: "Lobster", cursive;
+}
+
+main p {
+    text-align:center;
+    font-size: large;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid;
+    color:black;
+    font-size:35px;
+}
+
+#contntest {
+    width: 65.625rem;
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: black;
+    font-size:30px;
+    text-align: center;
+}
+
+header {
+    padding: 1.875rem;
+    background-image: linear-gradient(to right, #b34811, #f6ee47, #ff4c00);
+    color: white;
+}
+
+header h2 {
+    color: brown;
+}
+
+footer {
+    background: rgb(78,47,12);
+    background: radial-gradient(circle, rgba(78,47,12,1) 0%, rgba(255,172,28,1) 100%);
+    padding: 1.25rem 0;
+}
+
+#navbarSupportedContent {
+    background-color: #b85b04;
+    border-style:double;
+}

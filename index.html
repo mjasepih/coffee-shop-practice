@@ -1,0 +1,230 @@
+<!--mona,jotham-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!--bootstrap here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">        
+    <!--css here-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>
+    <script src="https://kit.fontawesome.com/dca9b5c027.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>Froth & Flame Coffee Co.</title>
+</head>
+
+<body>
+<!--HEADER-->          
+    <header class="align-self-center">
+        <h1>Froth & Flame Coffee Company</h1>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" id="contntest">
+          <div class="collapse navbar-collapse row row-content" id="navbarSupportedContent">
+            <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-self-center text-center">
+              <li class="nav-item col-sm-4">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-mug-saucer"> Home</i></a>
+              </li>
+              <li class="nav-item col-sm-4">
+                <a class="nav-link" href="#contact" onclick="highlightInfo()"><i class="fa-solid fa-blender-phone">Contact Us</i></a>
+              </li>
+              <li class="nav-item col-sm-4">
+                <a class="nav-link" href="#reviewForm"><i class="fa-regular fa-heart fa-beat">Leave A Review!</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br>
+    
+<!--COFFEEEEE MENUUUUUUU-->
+<section>
+    <div class="container">
+        <h1>Coffee Menu</h1>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="img/espresso.jpg" class="card-img-top" alt="Espresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso</h5>
+                        <p class="card-text">A concentrated coffee beverage you're sure to love, brewed by forcing hot water under pressure through finely ground coffee.</p>
+                    </div>
+                    <div class="card-footer text-bg-dark">
+                        <p class="card-text text-center">$4.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="img/cappucino.jpg" class="card-img-top" alt="Cappuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Our cappuccino is an espresso-based coffee drink that originated in Italy, with equal parts espresso, steamed milk, and milk foam.</p>
+                    </div>
+                    <div class="card-footer text-bg-dark">
+                        <p class="card-text text-center">$4.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="img/matcha.jpg" class="card-img-top" alt="Matcha Latte">
+                    <div class="card-body">
+                        <h5 class="card-title">Matcha Green Tea Latte</h5>
+                        <p class="card-text">A Matcha Latte is a tea-based beverage combining matcha tea powder and milk, or a dairy substitute, creating an enjoyable caffeinated, creamy beverage. (Available hot or cold)</p>
+                    </div>
+                    <div class="card-footer text-center text-bg-dark">
+                        <p class="card-text">$4.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+
+
+<!--MAIN-->
+    <main>
+        <h1 class="mb-4" id="home">Come Check Out The Best New Cafe In Town!</h1>  
+        <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, minima consectetur odio reprehenderit quisquam natus doloremque repudiandae voluptate nam tempore sequi neque deserunt inventore esse architecto sapiente, consequuntur magni itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique qui impedit eius delectus voluptatibus quisquam nihil harum quod, ex cumque, quos libero vitae eum suscipit quis deleniti ratione, repellendus iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt iusto quasi officiis cupiditate. Unde culpa minus debitis necessitatibus earum excepturi temporibus rem nulla totam. Magni at totam sit iste? Eligendi.</p>
+        <table>
+                
+
+        </table>
+    </main>
+
+    <br>
+    <br>
+    <br>
+
+    <!--<script src="index.js"></script>-->
+
+    <!--REVIEW/FEEDBACK FORM-->
+    <div class="row row-content mx-auto">
+        <div class="col-md-12">
+            <h2 class="text-center">Send us a Review!</h2>
+        </div>
+        <div class="col-md-10 mx-auto text-center">
+            <form id="reviewForm">
+                <div class="row mb-3">
+                    <label for="firstName" class="col-md-3 col-form-label">First Name</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="row mb-3">    
+                    <label for="lastName" class="col-md-3 col-form-label">Last Name</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row mb-3">   
+                    <label for="areaCode" class="col-md-3 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input class="form-control" type="tel" id="areaCode" name="areaCode" placeholder="Area code">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" type="tel" name="telNum" placeholder="Tel. number">
+                    </div>
+                </div>
+                <div class="row mb-3">    
+                    <label for="email" class="col-md-3 col-form-label">Email</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="row mb-3">    
+                    <label for="rating" class="col-md-3 col-form-label">Rating</label>
+                    <div class="col-md-6">
+                        <select class="form-control" type="rating" id="rating" name="rating" placeholder="Rating">
+                            <option value="">Select a rating</option>
+                            <option value="5">5 stars</option>
+                            <option value="4">4 stars</option>
+                            <option value="3">3 stars</option>
+                            <option value="2">2 stars</option>
+                            <option value="1">1 star</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="feedback" class="col-md-3 col-form-label">Your Feedback</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>  
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="contact" class="me-3">May we contact you? </label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="contactYes" name="contactRadios" value="yes">
+                                <label class="form-check-label" for="contactYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="contactNo" name="contactRadios" value="no">
+                                <label class="form-check-label" for="contactNo">No</label>
+                            </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" type="submit">Send Feedback</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<!--FOOTER-->
+
+
+    <footer>
+    
+        <!--Social Links-->
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#contact" onclick="highlightInfo()">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5 id="social">Social</h5>
+                    <a href="http://instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="http://facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="http://twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="http://youtube.com/"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                </div>
+                <div class="col-sm-4 text-center" id="contact">
+                    <i class="fa-solid fa-phone fa-lg text-primary"></i> 1-206-555-1234<br>
+                    <i class="fa-solid fa-envelope fa-lg text-primary"></i> froth&flamecoffee@gmail.com
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+<script>
+    function highlightInfo() {
+        const info = document.getElementById('contact');
+        info.classList.add('bg-warning');
+    }
+</script>
+
+</html>
