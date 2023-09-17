@@ -97,10 +97,6 @@
     <main>
         <h1 class="mb-4" id="home">Come Check Out The Best New Cafe In Town!</h1>  
         <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, minima consectetur odio reprehenderit quisquam natus doloremque repudiandae voluptate nam tempore sequi neque deserunt inventore esse architecto sapiente, consequuntur magni itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique qui impedit eius delectus voluptatibus quisquam nihil harum quod, ex cumque, quos libero vitae eum suscipit quis deleniti ratione, repellendus iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt iusto quasi officiis cupiditate. Unde culpa minus debitis necessitatibus earum excepturi temporibus rem nulla totam. Magni at totam sit iste? Eligendi.</p>
-        <table>
-                
-
-        </table>
     </main>
 
     <br>
@@ -166,7 +162,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="contact" class="me-3">May we contact you? </label>
+                        <label class="me-3">May we contact you? </label>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" id="contactYes" name="contactRadios" value="yes">
                                 <label class="form-check-label" for="contactYes">Yes</label>
@@ -195,7 +191,7 @@
         <!--Social Links-->
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
+                <div class="col-4 col-sm-2 offset-1 align-self-center text-center">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#contact" onclick="highlightInfo()">Contact</a></li>
@@ -221,10 +217,15 @@
 </body>
 
 <script>
+    
     function highlightInfo() {
         const info = document.getElementById('contact');
         info.classList.add('bg-warning');
+        setTimeout(() => {
+            info.classList.remove('bg-warning')
+        }, 1500)
     }
+
 </script>
 
 </html>
